@@ -11,10 +11,10 @@ namespace GraphChiCharp
         static void Main(string[] args)
         {
             Graph graph = new Graph();
-            graph.addVertex("A");
-            graph.addVertex("B");
+            graph.AddVertex("A");
+            graph.AddVertex("B");
 
-            graph.addEdge("A", "B");
+            graph.AddEdge("A", "B");
 
             graph.PrintGraph();
         }

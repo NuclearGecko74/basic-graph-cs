@@ -15,7 +15,7 @@ namespace GraphChiCharp
             adjList = new Dictionary<string, HashSet<string>>();
         }
 
-        public bool addVertex(string vertex)
+        public bool AddVertex(string vertex)
         {
             if(!adjList.ContainsKey(vertex))
             {
@@ -25,7 +25,7 @@ namespace GraphChiCharp
             return false;
         }
 
-        public bool addEdge(string vertex1, string vertex2)
+        public bool AddEdge(string vertex1, string vertex2)
         {
             if (adjList.ContainsKey(vertex1) && adjList.ContainsKey(vertex2))
             {
@@ -36,7 +36,7 @@ namespace GraphChiCharp
             return false;
         }
 
-        public bool removeEdge(string vertex1, string vertex2)
+        public bool RemoveEdge(string vertex1, string vertex2)
         {
             if (adjList.ContainsKey(vertex1) && adjList.ContainsKey(vertex2))
             {
@@ -47,7 +47,7 @@ namespace GraphChiCharp
             return false;
         }
 
-        public bool removeVertex(string vertex)
+        public bool RemoveVertex(string vertex)
         {
             if (adjList.ContainsKey(vertex))
             {
